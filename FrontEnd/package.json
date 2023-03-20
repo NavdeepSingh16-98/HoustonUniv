@@ -1,0 +1,69 @@
+{
+  "name": "kiaki-web-ii",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.7.0",
+    "@testing-library/react": "^10.0.4",
+    "@testing-library/user-event": "^10.1.1",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.2",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "fb": "^2.0.0",
+    "filestack-js": "^3.14.0",
+    "filestack-react": "^3.2.1",
+    "http-proxy": "^1.18.0",
+    "lodash": "^4.17.15",
+    "moment": "^2.25.3",
+    "node-fetch": "^2.6.0",
+    "query-string": "^6.12.1",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.3.0",
+    "react-datepicker": "^3.1.3",
+    "react-dom": "^16.13.1",
+    "react-google-maps": "^9.4.5",
+    "react-helmet": "^6.0.0",
+    "react-hook-form": "^5.6.3",
+    "react-loader-spinner": "^3.1.14",
+    "react-masonry-css": "^1.0.14",
+    "react-modal": "^3.14.3",
+    "react-multi-select-component": "^3.0.1",
+    "react-player": "^2.6.0",
+    "react-query": "^1.3.3",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.1",
+    "react-select": "^3.1.0",
+    "react-share": "^4.1.0",
+    "react-tiny-popover": "^4.1.0",
+    "tailwindcss": "^1.4.6",
+    "use-force-update": "^1.0.7",
+    "use-sound": "^4.0.1"
+  },
+  "scripts": {
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "styles": "npx tailwind build src/assets/styles/index.css -o src/assets/styles/styles.css",
+    "deploy": "npm run build && gcloud app deploy --quiet"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "cors": "^2.8.5"
+  }
+}

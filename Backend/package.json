@@ -1,0 +1,36 @@
+{
+  "name": "kiaki-web-ii",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "fb": "^2.0.0",
+    "filestack-js": "^3.14.0",
+    "http-proxy": "^1.18.0",
+    "lodash": "^4.17.15",
+    "moment": "^2.25.3",
+    "node-fetch": "^2.6.0",
+    "query-string": "^6.12.1",
+    "use-force-update": "^1.0.7",
+    "use-sound": "^4.0.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "cors": "^2.8.5"
+  }
+}

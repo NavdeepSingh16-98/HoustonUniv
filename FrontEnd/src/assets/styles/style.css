@@ -1,0 +1,727 @@
+body {
+	margin: 0;
+	overflow-x: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	outline: none !important;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+	color: #000;
+}
+h1,h2,h3,h4,h5,h6{margin: 0;}
+p {
+	font-family: 'Poppins';
+	color:#000;
+    margin: 0;
+}
+
+a,
+button,
+li {
+	font-family: 'Fredoka One';
+}
+
+a:hover {
+	text-decoration: none;
+}
+input:focus {
+	outline: none;
+	box-shadow: none;
+}
+button:focus,
+input:focus {
+	box-shadow: none;
+}
+img{width:100%;max-width: 100%;}
+
+/* css for removing default button fron input[type: number] */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+ .container {
+        max-width: 100%;
+        padding:0 15px;
+        margin:0 auto;
+    }  
+    .row {
+        display: flex;
+        align-items: center;
+    }
+    .logo {
+        width: 35%;
+        padding-right: 2em;
+		
+    }
+
+    .call {
+        width: 65%;
+        text-align: right;
+    }  
+    .top_bar {
+        padding: 1.5em 0;
+        background-color: #fff;
+    }
+    .call p {
+        font-size: 18px;
+        font-family: 'Futura Std';
+        line-height: 1.2em;
+        font-weight: normal;
+        color: #012f6d;
+        margin: 0;
+    }
+    .call a {
+        color: #c5103d;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: 'Futura Std';
+    }
+    .nav_bar {
+        background: #012f6d;
+        border-top: 4px solid #c5154b;
+        position: sticky;
+        top: 0;
+        z-index: 99;
+    }
+    .nav_menu {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .nav_menu a {
+        background: transparent;
+        transition: 0.3s ease;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1em;
+        padding: 15px 35px;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Futura Bk';display: flex;
+    }
+	.nav_menu a i {
+	margin-left: 5px;
+}
+    .dropdown {
+        position: relative;
+    }
+.dropdown_btn {
+	position: relative;
+	border-right: 1px solid #274e83;
+}
+    
+.dropdown_nav {
+	position: absolute;
+	right: 0;
+	top: 100%;
+	background: #012f6d;
+	width: 167px;
+	text-align: center;
+	height: 0;
+	overflow: hidden;
+	transition: 0.5s ease;
+}
+    .dropdown_btn:hover  .dropdown_nav {height:auto;overflow: visible;}
+    .dropdown_nav li a {
+        padding: 10px 10px;
+        display: block;
+        text-transform: capitalize;
+        transition: 0.3s ease;
+    }
+    .nav_menu a:hover, .nav_menu a:focus {
+        background: #c5154b;
+    }
+    /* ****************** */
+    /* banner css  */
+    /* ****************** */
+    .banner {
+        padding: 20px 0;
+        background-image: url(../images/banner.jpg);
+        background-size: cover;
+        background-position: left center;
+        position: relative;
+        z-index: 1;
+    }
+    
+    form {
+        width: 350px;
+        max-width: 100%;
+        margin-left: auto;
+    }
+    .form_header {
+        background: #012f6d;
+        padding: 18px 25px 18px 66px;
+        position: relative;
+    }
+    .form_header::after {
+        position: absolute;
+        content: '';
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid #012f6d;
+        bottom: -6px;
+        left: 34px;
+        transform: rotate(-45deg);
+    }
+    .form_header h2 {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: normal;
+        color: #fff;
+        font-family: 'Futura Bk';
+    }
+    .i-icon {
+        position: absolute;
+        left: 25px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        max-width: 33px;
+    }
+    .form_fields {
+        background: #84a4d0;
+        padding: 25px;
+    }
+    .form-control input, .form-control select {
+        border: 0;
+        border-radius: 0;
+        width: 100%;
+        height: 45px;
+        padding: 0 15px;
+        font-size: 16px;
+        color:#000;
+        font-family: 'Adobe Garamond Pro';
+    }
+    .form-control input::placeholder{
+        color:#000;
+        text-transform: capitalize;
+        font-family: 'Adobe Garamond Pro';
+    }
+    .form-control {
+        margin-bottom: 8px;
+        display: block;
+        overflow: hidden;
+    }
+    .form-control select {text-transform: capitalize;}
+    .f_btn:hover {
+        background: #012f6d;
+    }
+    
+    .f_btn {
+        width: 100%;
+        border: 0;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1em;
+        padding: 10px;
+        height: 60px;
+        color: #fff;
+        background: #c5154b;
+        text-transform: uppercase;
+        font-family: 'Futura Std';
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    .botm_txt {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+        background: rgb(1 47 109 / 60%);
+        z-index: -1;
+    }
+    .botm_txt h1 {
+        font-size: 22px;
+        color: #fff;
+        line-height: 1.1em;
+        font-family: 'Adobe Garamond Pro';
+        font-weight: normal;
+        width: 48%;
+    }
+
+    /* *************** */
+    /* about section css  */
+    /* ****************** */
+    .about {
+        padding: 3.5em 0;
+    }
+    .txt_block {padding-right: 30px;}
+    .txt_block h2 {
+        font-size: 24px;
+        color: #012f6d;
+        line-height: 1.1em;
+        margin-bottom: 20px;
+        font-family: 'Futura Std';
+        font-weight: bold;
+    }
+    .txt_block p {
+        font-size: 18px;
+        line-height: 1.3em;
+        margin-bottom: 35px;
+        color: #545252;
+        font-family: 'Adobe Garamond Pro';
+        font-weight: 500;
+    }
+    .txt_block p:last-child{margin-bottom: 0;}
+    .about .row {
+        padding: 0 30px;
+    }
+
+    /* ***************************** */
+    /* featured degree section css  */
+    /* ******************************* */
+    .featured {
+        padding: 3em 0 4em;
+    }
+    .about .row {
+        padding: 0 30px;
+    }
+    .featured .txt_block {
+        padding: 0 30px;
+    }
+    /* Style the tab */
+    .tab {
+        overflow: hidden;
+        margin-top: 3em;
+        padding: 0 30px;
+    }
+  .row .tablinks {
+    flex: 1;
+    height: 70px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 14px;
+    transition: 0.3s;
+    font-size: 15px;
+    color: #012f6d;
+    background: #f1f1f1;
+    text-transform: uppercase;
+    font-family: 'Futura Bk';
+    font-weight: normal;
+    transition: 0.3s ease;
+}
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background: #c60e3b;
+    color: #fff;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background: #c60e3b;
+    color: #fff;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+  }
+  .tab_head {
+    background: #84a4d0;
+    padding: 25px 20px;
+    text-align: center;
+    margin-top: 3em;
+}
+.tab_head h2 {
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.1em;
+    text-transform: uppercase;
+    font-family: 'Futura Std';
+    font-weight: bold;
+}
+.tabcontent .col {
+    flex: 1;
+}
+.tab_view {
+    text-align: center;
+    padding: 50px 30px;
+    position: relative;
+}
+.tab_view h3 {
+    font-size: 26px;
+    font-weight: normal;
+    font-family: 'Adobe Garamond Pro';
+    color: #012f6d;
+    margin-bottom: 16px;
+}
+.tab_view p {
+    font-size: 18px;
+    color: #545252;
+    font-family: 'Adobe Garamond Pro';
+    line-height: 1.4em;
+}
+.tabcontent .col:nth-child(2) {
+    position: relative;
+}
+.tabcontent .col:nth-child(2)::before {
+    position: absolute;
+    content: '';
+    top: 18%;
+    left: -1px;
+    width: 1px;
+    height: 38%;
+    background: #ddd;
+    opacity: 0.8;
+}
+.tabcontent .col:nth-child(2)::after {
+    position: absolute;
+    content: '';
+    top: 18%;
+    right: 0;
+    width: 1px;
+    height: 38%;
+    background: #ddd;
+    opacity: 0.8;
+}
+.triangle {
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #84a4d0;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -12px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: rotate(-45deg);
+}
+
+/* ************ */
+/* footer css  */
+/* *************** */
+.footer {
+    background: #012f6d;
+}
+.row .col {
+    flex: 1;
+}
+.footer .container{position: relative;}
+.footer .row {
+    position: relative;
+    padding: 32px 0;
+    padding-right: 125px;
+}
+.footer p, .footer a {
+    font-size: 16px;
+    font-family: 'Adobe Garamond Pro';
+    font-weight: normal;
+    color: #fff;
+    line-height: 1.2em;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.footer .row .col:last-child {
+    text-align: right;
+}
+#to_top {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #fff;
+    background: #01224f;
+    text-transform: uppercase;
+    font-family: 'Futura Bk';
+    cursor: pointer;
+}
+#to_top img {
+    margin-bottom: 5px;
+    max-width: 24px;
+}
+.featured .row.one {
+	flex-wrap: wrap;
+}
+.featured  .row .tablinks {
+	flex: 24%;
+}
+.error-message{
+    color:red;
+}
+
+
+/* media query start  here  */
+@media (min-width:768px){
+    .container {
+        max-width: 1200px;
+    }    
+}
+@media (min-width:992px){
+    .container {
+        max-width:950px;
+    }  
+    .logo img {
+        max-width: 270px;
+    }  
+}
+@media (min-width:1199px){
+    .container {
+        max-width: 1140px;
+    }    
+    .logo img {
+        max-width:200px;
+    }
+    .call p {
+        font-size: 18px;
+    }
+    .f_btn {
+        font-size: 20px;
+    }
+    form {
+        width: 430px;
+    }
+    .botm_txt h1 {
+        font-size: 28px;
+    }
+    .botm_txt h1 {
+        width: 60%;
+    }
+    .row .tablinks {
+        height: 80px;
+    }
+    .tab button {
+        font-size: 17px;
+    }
+    .tab_head h2 {
+        font-size: 24px;
+    }
+    .tab_view h3 {
+        font-size: 30px;
+    }
+    .footer p, .footer a {
+        font-size: 18px;
+    }
+}
+@media (min-width:1650px){
+    .container {
+        max-width: 1200px;
+    }   
+    .call p {
+        font-size: 30px;
+    } 
+    .botm_txt h1 {
+        font-size: 35px;
+    }
+}
+
+@media(max-width:767px){
+    .call p {
+        font-size: 14px;
+    }
+    .form_header h2 {
+        font-size: 16px;
+    }
+    .i-icon {
+        max-width: 30px;
+    }
+    .botm_txt h1 {
+        font-size: 17px;
+        width:42%;
+    }
+    .f_btn {
+        font-size: 14px;
+        height: 55px;
+    }
+    .row {
+        flex-wrap: wrap;
+    }
+    .row .col {
+        flex: 100%;
+    }
+    .about .row {
+        padding: 0 10px;
+        flex-direction: column-reverse;
+    }
+    .txt_block {
+        padding-right: 0;
+        text-align: center;
+        padding-top: 3em;
+    }
+    .txt_block p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .featured {
+        padding: 2em 0 3em;
+    }
+    .txt_block h2 {
+        font-size: 23px;
+    }
+    .featured .txt_block {
+        padding: 0;
+    }
+    .tab {
+        padding: 0;
+    }
+    .tab_head h2 {
+        font-size: 18px;
+    }
+    .tab_view h3 {
+        font-size: 24px;
+    }
+    .tab_view {
+        padding: 50px 10px;
+    }
+    .tabcontent .row .col:nth-child(2) .triangle, .tabcontent .row .col:nth-child(3) .triangle {
+        display: none;
+    }.tabcontent .col:nth-child(2)::before {
+        width: 100%;
+        height: 1px;
+        top: 0%;
+    }
+    .tabcontent .col:nth-child(2)::after {
+        width: 100%;
+        height: 1px;
+        top: unset;
+        bottom: 0;
+    }
+    .footer p, .footer a {
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .footer .row .col:last-child {
+        text-align: center;
+    }
+    .footer .row {
+        padding: 15px 0;
+        padding-right: 70px;
+    }
+    #to_top {
+        width: 70px;
+        font-size: 15px;
+    }
+    .logo {
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+    .logo img {
+        max-width: 180px;
+    }
+    .call {
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .top_bar {
+        padding: 1em 0;
+    }
+    .featured .row .tablinks {
+        flex: 45%;
+    }
+
+}
+@media(max-width:575px){
+    .tab button {
+        font-size: 12px;
+    }
+    .botm_txt {
+        position: static;
+        margin: 0 0 25px;
+    }
+    .botm_txt h1 {
+        width: 100%;
+    }
+    .nav_menu a {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+.dropdown_nav {
+	top: 100%;
+}
+ .banner form {
+	margin: auto;
+} 
+.botm_txt {
+	text-align: center;
+}
+}
+
+@media screen and (min-width:768px){
+
+
+    .hamburger{
+        display:none;
+    }
+}
+
+@media screen and (max-width:768px){
+    .hamburg_button{
+
+        background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 26px;
+    transition: font-size 0.7s ease;
+    }
+
+    .nav_menu {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction:column;
+    }
+
+.nav_menu a{
+    width: 100%;
+    justify-content: center;
+    font-size: 15px;
+}
+
+    .nav_bar {
+       
+
+        display: none;
+    }
+    .dropdown_btn {
+      width: 100%;
+    }
+    .dropdown_nav{
+        width: 100%;
+    }
+    .hamburger{
+        background: #012f6d;
+        border-top: 4px solid #c5154b;
+        position: sticky;
+        top: 0;
+        z-index: 99;
+
+        display:block;
+      
+    }
+}
